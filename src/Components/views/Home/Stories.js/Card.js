@@ -1,4 +1,6 @@
-import React from 'react'
+
+
+import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Slider from "react-slick";
 
@@ -11,7 +13,7 @@ const Card = ({data}) => {
       slidesToShow: 3,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 4000,
+      autoplaySpeed: 3000,
       responsive: [
         {
           breakpoint: 1024,
@@ -23,7 +25,7 @@ const Card = ({data}) => {
           }
         },
         {
-          breakpoint: 850,
+          breakpoint: 600,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
@@ -38,8 +40,8 @@ const Card = ({data}) => {
           }
         }
       ]
-    };
    
+  };
   function shuffleArray(array) {
     let shuffledArray = [...array];
     for (let i = shuffledArray.length - 1; i > 0; i--) {
@@ -50,10 +52,10 @@ const Card = ({data}) => {
   }
 
   const shuffledData = shuffleArray(data.user);
+
   return (
     <>
    
-    <div className="latest-card">
     <Slider {...settings}>
     
     {
@@ -62,10 +64,7 @@ const Card = ({data}) => {
     <>
     
   <div className="card" onClick={()=> Navigate(`/${elem.type}/${elem.id}`)}>
-  <div className="card-img">
-      <img src={`${elem.img_url}`} alt="" />
-
-  </div>
+ 
   <div className="card-body">
     <div className="card-title">{elem.title.slice(0,40)}...</div>
     <div className="para">{elem.content.slice(0,100)}...</div>
@@ -92,7 +91,6 @@ const Card = ({data}) => {
 
 </Slider>
    
-</div>
 
     </>
   )

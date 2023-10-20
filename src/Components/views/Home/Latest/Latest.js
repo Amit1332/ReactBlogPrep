@@ -1,17 +1,17 @@
-import React from 'react'
-import HeadingName from '../HeadingName'
+import React, { useContext } from 'react'
+import HeadingName from '../../../helper/partial/HeadingName'
 import Card from './Card'
+import { store } from '../../../../ContextApi/Store'
 
 const Latest = () => {
+  const data  = useContext(store)
+
   return (
     <div>
         <HeadingName name="The Latest"/>
-            <div className="latest-card">
-                <Card/>
-                <Card/>
-                <Card/>
-
-            </div>
+          
+              <Card data ={data}/>
+            
 
     </div>
   )

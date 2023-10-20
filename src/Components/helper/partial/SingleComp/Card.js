@@ -1,45 +1,21 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import Slider from "react-slick";
+import profile from '../../../../assets/icons/profile.jpeg'
+import HeadingName from '../HeadingName'
 
-const Card = ({data}) => {
+const Card = ({data,type}) => {
   const Navigate = useNavigate()
   const settings = {
     dots: false,
-    arrows:false,
+    arrows:true,
       infinite: true,
       slidesToShow: 3,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 4000,
-      responsive: [
-        {
-          breakpoint: 1024,
-          settings: {
-            slidesToShow: 3,
-            slidesToScroll: 3,
-            infinite: true,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 850,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2,
-            initialSlide: 2
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
-    };
+      autoplaySpeed: 2000
    
+  };
   function shuffleArray(array) {
     let shuffledArray = [...array];
     for (let i = shuffledArray.length - 1; i > 0; i--) {
@@ -53,24 +29,36 @@ const Card = ({data}) => {
   return (
     <>
    
-    <div className="latest-card">
+    <div className="latest-card related-cards">
+    <div style={{fontWeight:'600'}}>More From the Siren</div>
+    <hr style={{margin:"20px 0px"}}/>
     <Slider {...settings}>
     
     {
-      shuffledData.map((elem)=>{
+        shuffledData.filter((element) => element.type === type).map((elem)=>{
    return(
     <>
     
   <div className="card" onClick={()=> Navigate(`/${elem.type}/${elem.id}`)}>
-  <div className="card-img">
+  <span >Related reads</span>
+  <div className="card-img" style={{marginTop:'10px'}}>
       <img src={`${elem.img_url}`} alt="" />
 
   </div>
-  <div className="card-body">
+  <div className="card-body related">
     <div className="card-title">{elem.title.slice(0,40)}...</div>
-    <div className="para">{elem.content.slice(0,100)}...</div>
-    <div className='dates'><span style={{fontWeight:"bold"}}>Travel</span> / 4dec 2022</div>
-
+    <div className="user-data">
+                <div className="left">
+                <div className="user-img">
+                <img src={profile} alt="" />
+                </div>
+                <div className="user-name">
+                <h4>{elem.user.name}</h4>
+                <div className='dates'><span style={{fontWeight:"bold"}}>Travel</span> / 4dec 2022 10 mins read</div>
+                </div>
+                </div>
+               
+                </div>
 
   </div>
 </div>
