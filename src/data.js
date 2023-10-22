@@ -1404,23 +1404,28 @@ export const ads = [
         img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwrl9fuBwHBMaHAtKhF9HMbzNISGYQl4lTTg&usqp=CAU"
     }, {
         type:"bollywood",
-        img:""
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwrl9fuBwHBMaHAtKhF9HMbzNISGYQl4lTTg&usqp=CAU"
+
     },
     {
         type:"hollwood",
-        img:""
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwrl9fuBwHBMaHAtKhF9HMbzNISGYQl4lTTg&usqp=CAU"
+
     },
     {
         type:"technology",
-        img:""
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwrl9fuBwHBMaHAtKhF9HMbzNISGYQl4lTTg&usqp=CAU"
+
     },
     {
         type:"fitness",
-        img:""
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwrl9fuBwHBMaHAtKhF9HMbzNISGYQl4lTTg&usqp=CAU"
+
     },
     {
         type:"food",
-        img:""
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwrl9fuBwHBMaHAtKhF9HMbzNISGYQl4lTTg&usqp=CAU"
+
     }
 
 ]

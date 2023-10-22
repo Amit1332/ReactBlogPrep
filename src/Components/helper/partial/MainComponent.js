@@ -26,29 +26,37 @@ const MainComponent = ({name,type}) => {
     <div className="custom-hide">
     <Navbar/>
     </div>
-    <HeadingName name={name}/> 
-    <div className="article">
-    <div className="left">
- 
-               <Card data ={data} type={type}/>
-               
-            
-            <div className="load-button">
-            <button id="load">Load More </button>
-            </div>
-            
-     </div>
-     <div className="right">
-     <HeadingName name = "Top Post" />
-     <div className="post">
-  
+   
+    <div className='mainCom'>
+  <div>
+  <HeadingName name={name}/> 
+
+<div className="article">
+
+<div className="left">
+
+           <Card data ={data} type={type}/>
+           
+        
+        
+        
+ </div>
+ <div className="right post-set-margin">
+ <Ads data ={data}  type={type}/>
+
+ <div>
+ <HeadingName name = "Top Post" />
+ <div className="post">
+
+     
+          <Post data ={data}  type={type}/> 
          
-              <Post data ={data}  type={type}/> 
-             
-     </div>
-     <Ads data ={data}  type={type}/>
- 
-     </div>
+ </div>
+ </div>
+
+ </div>
+</div>
+  </div>
     </div>
     </div>
     </div>

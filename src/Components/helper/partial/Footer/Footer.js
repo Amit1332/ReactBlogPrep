@@ -6,14 +6,7 @@ const Footer = () => {
   return (
     <div>
         <div className="footer">
-        <div className="top">
-        <div className="first block">
-        <div className="header">
-                    <div className="head1">The</div>
-                    <div className="head1">Siren</div>
-
-            </div>
-        </div>
+        <div className="top">     
         <div className="second block">
         <div className="header">
                   <ul>
@@ -23,10 +16,7 @@ const Footer = () => {
 
                   </ul>
             </div>
-        
-        </div>
-        <div className="third block">
-        <div className="header">
+            <div className="header">
         <ul>
         <li onClick={()=>Navigate('/technology')}><i class="ri-shapes-line" ></i>Technollogy</li>
         <li onClick={()=>Navigate('/food')}><i class="ri-store-2-fill"></i>Food</li>
@@ -34,8 +24,9 @@ const Footer = () => {
 
         </ul>
   </div>
-
+        
         </div>
+       
         <div className="fourth block">
         <div className="header">
         <div className="soc">

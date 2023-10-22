@@ -10,7 +10,7 @@ const Stories = () => {
    <>
    
    <HeadingName name="Latest Stories"/>
-   <hr style={{marginTop:"30px"}} />
+   <hr />
 
    <div className='latest-card stories'>
 

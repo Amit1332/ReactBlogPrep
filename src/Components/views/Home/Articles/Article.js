@@ -17,10 +17,7 @@ const Article = (props) => {
   
               <Card data ={data}/>
               
-            
-           <div className="load-button">
-           <button id="load">Load More </button>
-           </div>
+      
 
        
               
@@ -31,7 +28,7 @@ const Article = (props) => {
 
            
     </div>
-    <div className="right">
+    <div className="right post-set-margin">
     <Ads data ={data} type="home"/>
     <div>
     <HeadingName name = "Top Post" />

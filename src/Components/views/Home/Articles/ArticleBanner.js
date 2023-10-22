@@ -32,6 +32,9 @@ const ArticleBanner = ({data}) => {
              return(
               <>
     <div className="top-head-image articlebanner"  onClick={()=> Navigate(`/${elem.type}/${elem.id}`)}>
+    <div className="close">
+    
+    </div>
     <div className="left">
     <div className="image-1">
          
