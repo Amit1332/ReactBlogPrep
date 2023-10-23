@@ -1404,27 +1404,27 @@ export const ads = [
         img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwrl9fuBwHBMaHAtKhF9HMbzNISGYQl4lTTg&usqp=CAU"
     }, {
         type:"bollywood",
-        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwrl9fuBwHBMaHAtKhF9HMbzNISGYQl4lTTg&usqp=CAU"
+        img:"https://i.pinimg.com/474x/b8/75/ba/b875ba6a9389fbd3dc21c051fb6d2a53.jpg"
 
     },
     {
-        type:"hollwood",
-        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwrl9fuBwHBMaHAtKhF9HMbzNISGYQl4lTTg&usqp=CAU"
+        type:"hollywood",
+        img:"https://i.ebayimg.com/images/g/e8IAAOSwOE9jVGjz/s-l1600.jpg"
 
     },
     {
         type:"technology",
-        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwrl9fuBwHBMaHAtKhF9HMbzNISGYQl4lTTg&usqp=CAU"
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSClXkafFmD8UlTkkMOsD-pV4qLtzEmokXCITjj9kToFBjqCRbZUhWFwF1Hx1K95zEQQ-w&usqp=CAU"
 
     },
     {
         type:"fitness",
-        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwrl9fuBwHBMaHAtKhF9HMbzNISGYQl4lTTg&usqp=CAU"
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfSU3exUB6pMM4hKdrnK5otIStPUUXMMzGJw&usqp=CAU"
 
     },
     {
         type:"food",
-        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwrl9fuBwHBMaHAtKhF9HMbzNISGYQl4lTTg&usqp=CAU"
+        img:"https://i.pinimg.com/474x/eb/f0/08/ebf008014722e98b07daf8c6bbd58a84.jpg"
 
     }
 

@@ -74,10 +74,10 @@ const SingleComponent = ({ type }) => {
 
                         <div className="clap">
                         <div className="chips">
-                          <div className="chip">React</div>
-                          <div className="chip">React</div>
-                          <div className="chip">React</div>
-                          <div className="chip">React</div>
+                          <div className="chip">Amit</div>
+                          <div className="chip">Ravi</div>
+                          <div className="chip">Rahul</div>
+                          <div className="chip">Sonu</div>
 
                           
 
